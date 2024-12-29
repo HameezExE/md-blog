@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/app/lib/posts";
+import { getAllPosts } from "@/lib/posts";
 import { remark } from "remark";
 import html from "remark-html";
 import { notFound } from "next/navigation";
