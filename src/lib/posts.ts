@@ -6,9 +6,12 @@ const postDir = path.join(process.cwd(), "posts");
 
 interface Post {
   slug: string;
-  title: string;
   date: string;
+  title: string;
+  description: string;
   content: string;
+  image: string;
+  tags: string[];
 }
 
 export const getAllPosts = () => {

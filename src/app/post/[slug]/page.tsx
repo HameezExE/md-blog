@@ -17,6 +17,26 @@ async function fetchPosts(slug: string) {
   });
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
+  const post = await fetchPosts(slug);
+  return {
+    title: post?.title,
+    description: post?.description,
+    openGraph: {
+      images: [
+        {
+          url: post?.image,
+        },
+      ],
+    },
+  };
+}
+
 export default async function Post({
   params,
 }: {

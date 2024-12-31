@@ -1,8 +1,9 @@
 ---
 title: "Hello, World!"
 date: "2024-12-29"
-author: "Hameez"
 description: "My first post on this personal blog."
+image: /images/image.jpeg
+tags: ["#blogging", "#first-post", "#getting-started"]
 ---
 
 # Hello, World!
