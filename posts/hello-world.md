@@ -11,7 +11,7 @@ Welcome to my blog! This is my very first post. 🎉
 
 ## Why I Started This Blog
 
-I created this blog to share my thoughts, projects, and experiences as I continue my journey in tech and beyond. Whether it's about coding, design, or life lessons, you'll find it all here.
+I created this blog to share my thoughts, projects, and experiences as I continue my journey in tech and beyond. Whether it's about coding, design, or life lessons.
 
 ## What's Next?
 

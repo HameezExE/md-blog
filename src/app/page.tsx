@@ -1,4 +1,5 @@
 import { getAllPosts } from "../lib/posts";
+import PostCard from "../components/PostCard";
 
 export default async function Blog() {
   const posts = await getAllPosts();
@@ -6,9 +7,7 @@ export default async function Blog() {
   return (
     <div>
       {posts.map((post) => (
-        <li key={post.slug}>
-          {post.title} {post.slug}
-        </li>
+        <PostCard key={post.slug} slug={post.slug} title={post.title} />
       ))}
     </div>
   );
