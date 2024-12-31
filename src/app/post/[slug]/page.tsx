@@ -3,6 +3,13 @@ import { remark } from "remark";
 import html from "remark-html";
 import { notFound } from "next/navigation";
 
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 async function fetchPosts(slug: string) {
   const posts = getAllPosts();
   return posts.find((post) => {
