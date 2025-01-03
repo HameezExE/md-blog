@@ -1,0 +1,126 @@
+/* Base article styling */
+article {
+  @apply text-base font-normal leading-relaxed;
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+/* Headings */
+article h1 {
+  @apply mb-6 mt-8 text-4xl font-bold tracking-tight;
+  @apply text-gray-900 dark:text-white;
+}
+
+article h2 {
+  @apply mb-5 mt-8 text-3xl font-semibold tracking-tight;
+  @apply text-gray-900 dark:text-white;
+}
+
+article h3 {
+  @apply mb-4 mt-6 text-2xl font-semibold tracking-tight;
+  @apply text-gray-900 dark:text-white;
+}
+
+article h4 {
+  @apply mb-4 mt-6 text-xl font-semibold tracking-tight;
+  @apply text-gray-900 dark:text-white;
+}
+
+article h5 {
+  @apply mb-4 mt-6 text-lg font-semibold tracking-tight;
+  @apply text-gray-900 dark:text-white;
+}
+
+article h6 {
+  @apply mb-4 mt-6 text-base font-semibold tracking-tight;
+  @apply text-gray-900 dark:text-white;
+}
+
+/* Paragraphs */
+article p {
+  @apply mb-6 leading-7;
+}
+
+/* Lists */
+article ul,
+article ol {
+  @apply mb-6 ml-6;
+}
+
+article ul {
+  @apply list-disc;
+}
+
+article ol {
+  @apply list-decimal;
+}
+
+article li {
+  @apply mb-2;
+}
+
+/* Inline code */
+article code {
+  @apply rounded px-1.5 py-0.5 font-mono text-sm;
+  @apply bg-gray-100 text-gray-900;
+  @apply dark:bg-gray-800 dark:text-gray-100;
+}
+
+/* Code blocks */
+article pre {
+  @apply mb-6 overflow-x-auto rounded-lg p-4;
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+article pre code {
+  @apply block bg-transparent p-0;
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+/* Blockquotes */
+article blockquote {
+  @apply mb-6 border-l-4 py-1 pl-4;
+  @apply border-gray-200 dark:border-gray-700;
+  @apply text-gray-600 dark:text-gray-400;
+  @apply italic;
+}
+
+/* Links */
+article a {
+  @apply text-blue-600 dark:text-blue-400;
+  @apply hover:underline;
+}
+
+/* Tables */
+article table {
+  @apply mb-6 w-full border-collapse text-left;
+}
+
+article th {
+  @apply border-b p-3 font-semibold;
+  @apply border-gray-200 dark:border-gray-700;
+  @apply bg-gray-50 dark:bg-gray-800;
+}
+
+article td {
+  @apply border-b p-3;
+  @apply border-gray-200 dark:border-gray-700;
+}
+
+/* Horizontal rule */
+article hr {
+  @apply my-8 border-t;
+  @apply border-gray-200 dark:border-gray-700;
+}
+
+/* Small text */
+article small {
+  @apply text-sm;
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Mark/Highlight */
+article mark {
+  @apply bg-yellow-100 dark:bg-yellow-800;
+  @apply text-gray-900 dark:text-gray-100;
+  @apply rounded px-1;
+}

@@ -2,6 +2,8 @@ import { getAllPosts } from "@/lib/posts";
 import { remark } from "remark";
 import html from "remark-html";
 import { notFound } from "next/navigation";
+import Image from "next/image";
+import "./typography.css";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -54,8 +56,18 @@ export default async function Post({
     .then((res) => res.toString());
 
   return (
-    <article>
-      <div dangerouslySetInnerHTML={{ __html: postContent }}></div>
-    </article>
+    <div className="mt-12">
+      <section className="flex">
+        <Image alt={post.title} src={post.image} width={650} height={1200} />
+        <div className="ml-12">
+          <h1>{post.title}</h1>
+          <p>{post.description}</p>
+        </div>
+      </section>
+
+      <article className="mx-auto mt-12 max-w-[700px]">
+        <div dangerouslySetInnerHTML={{ __html: postContent }}></div>
+      </article>
+    </div>
   );
 }
