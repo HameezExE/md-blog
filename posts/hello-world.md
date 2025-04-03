@@ -1,9 +1,9 @@
 ---
 title: "Hello, World!"
-date: "2024-12-29"
+date: April 3, 2025
 description: "My first post on this personal blog."
 image: /images/image.jpeg
-tags: ["#blogging", "#first-post", "#getting-started"]
+tags: ["Hello World"]
 ---
 
 # Hello, World!

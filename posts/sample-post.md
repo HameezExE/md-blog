@@ -1,9 +1,9 @@
 ---
 title: My First Blog Post
-date: "2024/10/27"
+date: April 3, 2025
 description: This is the description of my first blog post.
 image: /images/image.jpeg
-tags: ["#blogging", "#first-post", "#getting-started"]
+tags: ["JavaScript"]
 ---
 
 # Welcome to My Blog!
