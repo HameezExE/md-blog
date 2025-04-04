@@ -5,7 +5,7 @@ export default async function Blog() {
   const posts = await getAllPosts();
 
   return (
-    <div>
+    <section className="mt-12 grid grid-cols-2 gap-6 max-[500px]:grid-cols-1 sm:grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-2">
       {posts.map((post) => (
         <PostCard
           key={post.slug}
@@ -17,7 +17,7 @@ export default async function Blog() {
           tags={post.tags}
         />
       ))}
-    </div>
+    </section>
   );
 }
 
