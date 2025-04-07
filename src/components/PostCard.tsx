@@ -24,7 +24,9 @@ export default function PostCard({
         <Image src={img} width="200" height={200} alt={title} />
         <div>
           {tags.map((tag) => (
-            <p key={tag}>{tag}</p>
+            <p key={tag} className="text-primary">
+              {tag}
+            </p>
           ))}
           <h2>{title}</h2>
           <p>{desc}</p>
