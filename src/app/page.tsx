@@ -6,11 +6,6 @@ export default async function Blog() {
 
   return (
     <>
-      <section>
-        <form action="" method="post">
-          <input type="text" name="" id="" />
-        </form>
-      </section>
       <section className="mt-12 grid grid-cols-2 gap-6 max-[500px]:grid-cols-1 sm:grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-2">
         {posts.map((post) => (
           <PostCard
