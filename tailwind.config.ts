@@ -10,18 +10,22 @@ export default {
     extend: {
       colors: {
         primary: {
+          // interactive and highlight elements
           DEFAULT: "#2563eb",
           dark: "#3b82f6",
         },
         background: {
+          // page/container backgrounds
           light: "#ffffff",
           dark: "#0f172a",
         },
         foreground: {
+          // main text: headings, navbar items
           light: "#0f172a",
           dark: "#f8fafc",
         },
         muted: {
+          // secondary text
           light: "#64748b",
           dark: "#94a3b8",
         },
@@ -30,6 +34,7 @@ export default {
           dark: "#334155",
         },
         accent: {
+          // highlights, tags, badges, code
           light: "#fbbf24",
           dark: "#facc15",
         },
