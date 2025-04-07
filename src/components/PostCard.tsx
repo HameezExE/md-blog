@@ -20,14 +20,16 @@ export default function PostCard({
 }: PostCardProps) {
   return (
     <Link href={`post/${slug}`}>
-      <div className="border">
+      <div className="border flex">
         <Image src={img} width="200" height={200} alt={title} />
-        <p>{date}</p>
-        <h2>{title}</h2>
-        <p>{desc}</p>
-        {tags.map((tag) => (
-          <p key={tag}>{tag}</p>
-        ))}
+        <div>
+          {tags.map((tag) => (
+            <p key={tag}>{tag}</p>
+          ))}
+          <h2>{title}</h2>
+          <p>{desc}</p>
+          <p>{date}</p>
+        </div>
       </div>
     </Link>
   );
