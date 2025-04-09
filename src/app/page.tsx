@@ -1,6 +1,5 @@
 import { getAllPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
-import Footer from "@/components/Footer";
 
 export default async function Blog() {
   const posts = await getAllPosts();
@@ -20,7 +19,6 @@ export default async function Blog() {
           />
         ))}
       </section>
-      <Footer />
     </>
   );
 }
