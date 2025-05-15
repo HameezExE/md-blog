@@ -3,7 +3,7 @@ title: "Exploring the Power of Next.js: A Beginner's Journey"
 date: "2025-01-03"
 category: "Next.js"
 description: "Discover how Next.js makes web development exciting and accessible for beginners. "
-image: "/images/image.jpg"
+image: "/images/image.jpeg"
 ---
 
 Next.js has recently caught my attention, and diving into its features has been an exciting journey. In this post, I'll share some highlights of what makes Next.js so appealing to beginners and how it simplifies complex web development tasks.

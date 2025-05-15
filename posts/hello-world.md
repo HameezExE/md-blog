@@ -2,7 +2,7 @@
 title: "Hello, World!"
 date: December 10th, 2024
 description: "My first post on this personal blog."
-image: /images/image.jpg
+image: "/images/image.jpeg"
 category: Testing
 ---
 

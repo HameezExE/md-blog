@@ -19,12 +19,14 @@ async function fetchPosts(slug: string) {
   });
 }
 
+// Generate static params
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const slug = (await params).slug;
+  const { slug } = await params;
   const post = await fetchPosts(slug);
   return {
     title: post?.title,
