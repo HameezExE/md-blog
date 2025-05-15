@@ -1,9 +1,9 @@
 ---
 title: "Hello, World!"
-date: April 3, 2025
+date: December 10th, 2024
 description: "My first post on this personal blog."
-image: /images/image.jpeg
-tags: ["Hello World"]
+image: /images/image.jpg
+category: Testing
 ---
 
 # Hello, World!

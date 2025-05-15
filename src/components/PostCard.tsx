@@ -7,7 +7,7 @@ interface PostCardProps {
   date: string;
   desc: string;
   img: string;
-  tags: string[];
+  cat: string;
 }
 
 export default function PostCard({
@@ -16,18 +16,14 @@ export default function PostCard({
   title,
   desc,
   img,
-  tags,
+  cat,
 }: PostCardProps) {
   return (
     <Link href={`post/${slug}`}>
       <div className="border flex">
         <Image src={img} width="200" height={200} alt={title} />
         <div>
-          {tags.map((tag) => (
-            <p key={tag} className="text-primary">
-              {tag}
-            </p>
-          ))}
+          <p className="text-primary">{cat}</p>
           <h2>{title}</h2>
           <p>{desc}</p>
           <p>{date}</p>

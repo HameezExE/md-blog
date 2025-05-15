@@ -9,7 +9,8 @@ export default function PostFilter({ posts }) {
   const filteredPosts = posts.filter(
     (post) =>
       post.title.toLowerCase().includes(term.toLowerCase()) ||
-      post.description.toLowerCase().includes(term.toLowerCase())
+      post.description.toLowerCase().includes(term.toLowerCase()) ||
+      post.category.toLowerCase().includes(term.toLowerCase())
   );
 
   const handleSearch = (e) => {};
@@ -35,7 +36,7 @@ export default function PostFilter({ posts }) {
             title={post.title}
             desc={post.description}
             img={post.image}
-            tags={post.tags}
+            cat={post.category}
           />
         ))}
       </section>
