@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 const postDir = path.join(process.cwd(), "posts");
 
-interface Post {
+export interface Post {
   slug: string;
   date: string;
   title: string;
