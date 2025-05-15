@@ -4,11 +4,7 @@ import PostFilter from "@/components/PostFilter";
 export default async function Blog() {
   const posts = await getAllPosts();
 
-  return (
-    <>
-      <PostFilter posts={posts} />
-    </>
-  );
+  return <PostFilter posts={posts} />;
 }
 
 export const revalidate = 3;

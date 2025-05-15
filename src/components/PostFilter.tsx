@@ -3,14 +3,22 @@
 import { useState } from "react";
 import PostCard from "@/components/PostCard";
 
-export default function PostFilter({ posts }) {
+export default function PostFilter({ posts, category }) {
   const [term, setTerm] = useState("");
 
-  const filteredPosts = posts.filter(
+  const byCategory = category
+    ? posts.filter(
+        (post) => post.category.toLowerCase() === category.toLowerCase()
+      )
+    : posts;
+
+  const search = term.toLowerCase();
+
+  const filteredPosts = byCategory.filter(
     (post) =>
-      post.title.toLowerCase().includes(term.toLowerCase()) ||
-      post.description.toLowerCase().includes(term.toLowerCase()) ||
-      post.category.toLowerCase().includes(term.toLowerCase())
+      post.title.toLowerCase().includes(search) ||
+      post.description.toLowerCase().includes(search) ||
+      post.category.toLowerCase().includes(search)
   );
 
   const handleSearch = (e) => {};
