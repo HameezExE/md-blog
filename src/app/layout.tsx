@@ -19,8 +19,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: `Personal Blog | ${process.env.YOUR_NAME}`,
-    template: "%s | " + `${process.env.YOUR_NAME}`,
+    default: `Personal Blog | ${process.env.NAME}`,
+    template: "%s | " + `${process.env.NAME}`,
   },
   description:
     "A growing collection of thoughts, tutorials, and explorations in tech. Less blog, more personal wiki of things I'm curious about.",
