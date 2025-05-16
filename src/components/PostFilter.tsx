@@ -21,8 +21,6 @@ export default function PostFilter({ posts, category }) {
       post.category.toLowerCase().includes(search)
   );
 
-  const handleSearch = (e) => {};
-
   return (
     <>
       <section>
