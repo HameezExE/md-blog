@@ -28,7 +28,10 @@ export async function generateMetadata({
   const post = await fetchPosts(slug);
 
   if (!post) {
-    notFound();
+    return {
+      title: "Post Not Found",
+      description: "The requested post could not be found.",
+    };
   }
 
   const websiteUrl = process.env.WEBSITE_URL;
