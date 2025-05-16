@@ -2,7 +2,7 @@ import { generateStaticParams } from "@/app/post/[slug]/page";
 import { getAllPosts, Post } from "@/lib/posts";
 import PostFilter from "@/components/PostFilter";
 
-export default async function CategoryPost({
+export default async function CategoryPage({
   params,
 }: {
   params: Promise<{ slug: string }>;

@@ -23,7 +23,26 @@ export const metadata: Metadata = {
     template: "%s | " + `${process.env.NAME}`,
   },
   description:
-    "A growing collection of thoughts, tutorials, and explorations in tech. Less blog, more personal wiki of things I'm curious about.",
+    "Discover interesting articles about Topic A, Topic B, and emerging trends in Topic C. Minimal, fast, and insightful.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: process.env.WEBSITE_URL,
+    siteName: `Personal Blog | ${process.env.NAME}`,
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: `Personal Blog | ${process.env.NAME}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@hameezexe",
+    creator: "@hameezexe",
+  },
 };
 
 export default function RootLayout({
