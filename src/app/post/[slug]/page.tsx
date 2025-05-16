@@ -19,24 +19,46 @@ async function fetchPosts(slug: string) {
   });
 }
 
-// Generate static params
-
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug } = await params;
+  const { slug } = params;
   const post = await fetchPosts(slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  const websiteUrl = process.env.WEBSITE_URL;
+
   return {
-    title: post?.title,
-    description: post?.description,
+    title: post.title,
+    description: post.description,
+    alternates: {
+      canonical: `${websiteUrl}/${post.slug}`,
+    },
     openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.description,
+      publishedTime: post.date,
+      url: `${websiteUrl}/${post.slug}`,
       images: [
         {
-          url: post?.image,
+          url: post.image || "/og-default.png",
+          width: 1200,
+          height: 630,
+          alt: post.title,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [post.image || "/og-default.png"],
     },
   };
 }
