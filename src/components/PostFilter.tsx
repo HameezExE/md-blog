@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 import PostCard from "@/components/PostCard";
+import Link from "next/link";
 
 export default function PostFilter({ posts, category }) {
+  const categories = [
+    ...new Set(posts.map((post) => post.category.toLowerCase())),
+  ];
+
   const [term, setTerm] = useState("");
 
   const byCategory = category
@@ -32,6 +37,13 @@ export default function PostFilter({ posts, category }) {
             className="bg-green-200"
           />
         </form>
+        <div>
+          {categories.map((category) => (
+            <Link key={category} href={`/category/${category}`}>
+              {category}
+            </Link>
+          ))}
+        </div>
       </section>
       <section className="mt-12 grid grid-cols-2 gap-6 max-[500px]:grid-cols-1 sm:grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-2">
         {filteredPosts.map((post) => (
