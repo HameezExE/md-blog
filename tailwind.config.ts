@@ -25,7 +25,7 @@ export default {
         },
         foreground: {
           // main text: headings, navbar items
-          light: "#0f172a",
+          light: "#333333",
           dark: "#f8fafc",
         },
         muted: {
@@ -41,6 +41,10 @@ export default {
           // highlights, tags, badges, code
           light: "#fbbf24",
           dark: "#facc15",
+        },
+        cardBg: {
+          light: "#f1f5f9", // Tailwind slate‑100 – soft off‑white for subtle separation
+          dark: "#1e293b", // Tailwind slate‑800 – darker slate to lift cards off a dark page
         },
       },
     },

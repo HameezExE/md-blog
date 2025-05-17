@@ -53,10 +53,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${montserrat.variable} antialiased mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-6 xl:px-6`}
+        className={`${inter.variable} ${montserrat.variable} font-body antialiased `}
       >
         <Header />
-        {children}
+        <section className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-6 xl:px-6">
+          {children}
+        </section>
         <Footer />
       </body>
     </html>
