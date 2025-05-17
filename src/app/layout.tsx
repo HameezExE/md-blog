@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: {
     default: `Personal Blog | ${process.env.NAME}`,
-    template: "%s | " + `${process.env.NAME}`,
+    template: "%s | " + `${process.env.NAME}'s Personal Blog`,
   },
   description:
     "Discover interesting articles about Topic A, Topic B, and emerging trends in Topic C. Minimal, fast, and insightful.",

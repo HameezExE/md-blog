@@ -19,7 +19,7 @@ export default function PostCard({
   cat,
 }: PostCardProps) {
   return (
-    <Link href={`post/${slug}`}>
+    <Link href={`/post/${slug}`}>
       <div className="border flex">
         <Image src={img} width="200" height={200} alt={title} />
         <div>
