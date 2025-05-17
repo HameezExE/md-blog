@@ -1,6 +1,6 @@
 ---
 title: "Hello, World!"
-date: December 10th, 2024
+date: "2025-01-10"
 description: "My first post on this personal blog."
 image: "/images/image.jpeg"
 category: Testing

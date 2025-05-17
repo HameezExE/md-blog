@@ -26,7 +26,13 @@ export default function PostCard({
           <p className="text-primary">{cat}</p>
           <h2>{title}</h2>
           <p>{desc}</p>
-          <p>{date}</p>
+          <p>
+            {new Date(date).getDate() +
+              ", " +
+              new Date(date).toLocaleString("default", { month: "long" }) +
+              " " +
+              new Date(date).getFullYear()}
+          </p>
         </div>
       </div>
     </Link>
