@@ -19,8 +19,11 @@ export default function PostCard({
   cat,
 }: PostCardProps) {
   return (
-    <Link href={`/post/${slug}`} className="bg-cardBg-light">
-      <div className="border flex">
+    <Link
+      href={`/post/${slug}`}
+      className="h-full bg-cardBg-light flex flex-col overflow-hidden"
+    >
+      <div className="flex">
         <Image src={img} width="200" height={200} alt={title} />
         <div>
           <p className="text-primary">{cat}</p>
