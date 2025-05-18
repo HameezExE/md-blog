@@ -8,7 +8,7 @@ export default function Header() {
     { name: "Services", href: "/services" },
   ];
   return (
-    <header className="border-b-2 border-gray-300 text-foreground-light">
+    <header className="border-b-2 border-gray-300 text-foreground-dark bg-opacity-70 bg-primary">
       <div className="flex justify-between min-h-16 items-center mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-6 xl:px-6 ">
         <Link href={"/"} className="font-heading font-semibold text-lg">
           {process.env.NAME}

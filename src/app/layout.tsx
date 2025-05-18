@@ -56,9 +56,7 @@ export default function RootLayout({
         className={`${inter.variable} ${montserrat.variable} font-body antialiased `}
       >
         <Header />
-        <section className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-6 xl:px-6">
-          {children}
-        </section>
+        <section>{children}</section>
         <Footer />
       </body>
     </html>
