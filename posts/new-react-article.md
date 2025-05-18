@@ -2,8 +2,8 @@
 title: "Getting Started with React.js: A Beginner's Perspective"
 date: "2025-01-10"
 category: "next.js"
-description: "Explore the fundamentals of React.js and why it's a must-learn library for modern web developers."
-image: "/images/react-cover.jpeg"
+description: "Explore the fundamentals of React.js"
+image: "/images/image.jpeg"
 ---
 
 React.js was my introduction to modern frontend development, and it quickly became the foundation of everything I’ve built since. In this post, I’ll walk you through the basics of React, why it's so popular, and what makes it an essential tool for web developers — especially beginners.
