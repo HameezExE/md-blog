@@ -4,6 +4,7 @@ import html from "remark-html";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import "./typography.css";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -83,16 +84,27 @@ export default async function Post({
     .then((res) => res.toString());
 
   return (
-    <div className="mt-12">
-      <section className="flex">
-        <Image alt={post.title} src={post.image} width={650} height={1200} />
-        <div className="ml-12">
-          <h1>{post.title}</h1>
-          <p>{post.description}</p>
-        </div>
-      </section>
-
-      <article className="mx-auto mt-12 max-w-[700px]">
+    <div className="mt-10">
+      <article className="mx-auto mt-12 max-w-[700px] justify-center items-center">
+        <section className="flex flex-col">
+          <div className="text-center">
+            <Link
+              href={`/category/${post.category}`}
+              className="cursor-pointer rounded-md bg-primary px-3 py-1 text-foreground-dark text-[11px] font-semibold uppercase"
+            >
+              {post.category}
+            </Link>
+            <h1 className="mt-3 mb-2">{post.title}</h1>
+            <p>{post.description}</p>
+          </div>
+          <Image
+            alt={post.title}
+            src={post.image}
+            width={700}
+            height={426}
+            className="rounded-xl"
+          />
+        </section>
         <div dangerouslySetInnerHTML={{ __html: postContent }}></div>
       </article>
     </div>

@@ -1,38 +1,38 @@
 /* Base article styling */
 article {
   @apply text-base font-normal leading-relaxed;
-  @apply text-gray-700 dark:text-gray-300;
+  @apply text-gray-700;
 }
 
 /* Headings */
 article h1 {
   @apply mb-6 mt-8 text-4xl font-bold tracking-tight;
-  @apply text-gray-900 dark:text-white;
+  @apply text-gray-900;
 }
 
 article h2 {
   @apply mb-5 mt-8 text-3xl font-semibold tracking-tight;
-  @apply text-gray-900 dark:text-white;
+  @apply text-gray-900;
 }
 
 article h3 {
   @apply mb-4 mt-6 text-2xl font-semibold tracking-tight;
-  @apply text-gray-900 dark:text-white;
+  @apply text-gray-900;
 }
 
 article h4 {
   @apply mb-4 mt-6 text-xl font-semibold tracking-tight;
-  @apply text-gray-900 dark:text-white;
+  @apply text-gray-900;
 }
 
 article h5 {
   @apply mb-4 mt-6 text-lg font-semibold tracking-tight;
-  @apply text-gray-900 dark:text-white;
+  @apply text-gray-900;
 }
 
 article h6 {
   @apply mb-4 mt-6 text-base font-semibold tracking-tight;
-  @apply text-gray-900 dark:text-white;
+  @apply text-gray-900;
 }
 
 /* Paragraphs */
@@ -62,31 +62,30 @@ article li {
 article code {
   @apply rounded px-1.5 py-0.5 font-mono text-sm;
   @apply bg-gray-100 text-gray-900;
-  @apply dark:bg-gray-800 dark:text-gray-100;
 }
 
 /* Code blocks */
 article pre {
   @apply mb-6 overflow-x-auto rounded-lg p-4;
-  @apply bg-gray-100 dark:bg-gray-800;
+  @apply bg-gray-100;
 }
 
 article pre code {
   @apply block bg-transparent p-0;
-  @apply text-gray-900 dark:text-gray-100;
+  @apply text-gray-900;
 }
 
 /* Blockquotes */
 article blockquote {
   @apply mb-6 border-l-4 py-1 pl-4;
-  @apply border-gray-200 dark:border-gray-700;
-  @apply text-gray-600 dark:text-gray-400;
+  @apply border-gray-200;
+  @apply text-gray-600;
   @apply italic;
 }
 
 /* Links */
 article a {
-  @apply text-blue-600 dark:text-blue-400;
+  @apply text-blue-600;
   @apply hover:underline;
 }
 
@@ -97,30 +96,30 @@ article table {
 
 article th {
   @apply border-b p-3 font-semibold;
-  @apply border-gray-200 dark:border-gray-700;
-  @apply bg-gray-50 dark:bg-gray-800;
+  @apply border-gray-200;
+  @apply bg-gray-50;
 }
 
 article td {
   @apply border-b p-3;
-  @apply border-gray-200 dark:border-gray-700;
+  @apply border-gray-200;
 }
 
 /* Horizontal rule */
 article hr {
   @apply my-8 border-t;
-  @apply border-gray-200 dark:border-gray-700;
+  @apply border-gray-200;
 }
 
 /* Small text */
 article small {
   @apply text-sm;
-  @apply text-gray-600 dark:text-gray-400;
+  @apply text-gray-600;
 }
 
 /* Mark/Highlight */
 article mark {
-  @apply bg-yellow-100 dark:bg-yellow-800;
-  @apply text-gray-900 dark:text-gray-100;
+  @apply bg-yellow-100;
+  @apply text-gray-900;
   @apply rounded px-1;
 }

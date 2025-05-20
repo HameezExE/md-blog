@@ -33,11 +33,14 @@ export default function PostCard({
         />
         <div className="ml-6 flex flex-col">
           <div>
-            <p className="text-foreground-dark text-xs font-semibold uppercase">
+            <Link
+              href={`/category/${cat}`}
+              className="cursor-pointer rounded-md bg-primary px-3 py-1 text-foreground-dark text-[11px] font-semibold uppercase"
+            >
               {cat}
-            </p>
+            </Link>
           </div>
-          <h2 className="font-heading text-lg leading-[1.2]  font-semibold text-foreground-light mb-0.5">
+          <h2 className="font-heading text-lg leading-[1.2]  font-semibold text-foreground-light mt-2 mb-0.5">
             {title}
           </h2>
           <p className="text-sm text-muted-light mb-2">{desc}</p>

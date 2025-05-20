@@ -30,7 +30,7 @@ export default function PostFilter({ posts, category }) {
     <>
       <section className="bg-primary bg-opacity-70 ">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-6 xl:px-6 flex justify-center flex-col items-center min-h-[250px]">
-          <h1 className="max-w-[75%] text-white text-[28px] text-center font-heading font-semibold mb-5">
+          <h1 className="max-w-[90%] md:max-w-[75%] text-white text-[22px] md:text-[28px] text-center font-heading font-semibold mb-5">
             Discover interesting articles about Topic A, Topic B, and emerging
             trends in Topic C. Minimal, fast, and insightful.
           </h1>
